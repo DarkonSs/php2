@@ -1,0 +1,136 @@
+header {
+  display: flex;
+  background-color: #111;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.navLogo {
+  display: flex;
+  align-items: center;
+  margin: 15px 1% 15px 0px;
+}
+
+.navLogo a {
+  font-size: 40px;
+  color: var(--whiteColor);
+  margin-right: 30px;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar ul li {
+  color: var(--colorLabel);
+  margin: 0px 15px;
+}
+
+.navbar ul li:hover {
+  color: var(--whiteColor);
+  transition: 0.4s;
+}
+
+#searchInput {
+  padding: 10px;
+  border-radius: 100px;
+  border: none;
+  background-color: #e9e9f5;
+  width: 300px;
+}
+
+#searchInput:focus-visible {
+  outline: none;
+}
+
+.is-sticky {
+  position: sticky;
+  top: 0px;
+}
+
+.slide-top {
+	animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes slide-top {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-100px);
+  }
+}
+
+.slide-bottom {
+	animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes slide-bottom {
+  0% {
+    transform: translateY(-100px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.subHeader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65),
+  rgba(0, 0, 0, 0.65)),
+    url('../img/makeupBg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 100px;
+  box-shadow: 0px 10px 45px -3px rgba(0, 0, 0, 0.4);
+}
+
+.subHeaderContent {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  max-width: 800px;
+  align-items: center;
+}
+
+.subHeaderContent h1 {
+  color: var(--whiteColor);
+}
+
+
+.subHeaderContent h1 {
+  font-size: 50px;
+}
+
+.btnInSubHeader {
+  display: flex;
+  justify-self: center;
+}
+
+.btnInSubHeader a {
+  padding: 10px 20px;
+  color: #e9e9f5;
+  background-color: var(--blueGray);
+  margin: 0px 10px;
+  border-radius: 100px;
+}
+
+.btnInSubHeader a:nth-child(2) {
+  background-color: #535c9f;
+}
+
+.btnInSubHeader a:nth-child(1):hover {
+  background-color: #678094;
+  transition: 0.4s;
+}
+
+.btnInSubHeader a:nth-child(2):hover {
+  background-color: #3f4679;
+  transition: 0.4s;
+}
